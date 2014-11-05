@@ -29,7 +29,7 @@ class NewVisitorTest(LiveServerTestCase):
 
 		self.assertIn('To-Do lists', self.browser.title)
 		header_text = self.browser.find_element_by_tag_name('h1').text
-		self.assertIn('To-Do', header_text)
+		self.assertIn('Start a new To-DO list', header_text)
 
 		# She is invited to enter a to-do item straight away
 
@@ -83,7 +83,7 @@ class NewVisitorTest(LiveServerTestCase):
 		
 # Francis starts a new list by entering a new item. He is less interesting thatn Edith.
 
-		inputbox = self.browser.find_element_by_id('id_new_ietm')
+		inputbox = self.browser.find_element_by_id('id_new_item')
 		inputbox.send_keys('Buy milk')
 		inputbox.send_keys(Keys.ENTER)
 		
