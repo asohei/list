@@ -48,9 +48,7 @@ class NewVisitorTest(LiveServerTestCase):
 		edith_list_url = self.browser.current_url
 		self.assertRegex(edith_list_url, '/lists/.+')
 		
-		#import time
-		#time.sleep(5)
-		
+
 		self.check_for_row_in_list_table('1: Buy peacock feathers')
 		
 		
@@ -63,7 +61,10 @@ class NewVisitorTest(LiveServerTestCase):
 
 
 # The page updates again, and now shows both items on her list
+	
+		print (self.browser.current_url)
 		
+	
 		self.check_for_row_in_list_table('1: Buy peacock feathers')
 		self.check_for_row_in_list_table('2: Use peacock feathers to make a fly')
 		
