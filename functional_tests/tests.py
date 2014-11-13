@@ -22,6 +22,7 @@ class NewVisitorTest(LiveServerTestCase):
 
 		#Edith heard about the cool online service. She goes out to check its homepage
 
+		
 		self.browser.get(self.live_server_url)
 		
 		
@@ -62,7 +63,6 @@ class NewVisitorTest(LiveServerTestCase):
 
 # The page updates again, and now shows both items on her list
 
-	
 		self.check_for_row_in_list_table('1: Buy peacock feathers')
 		self.check_for_row_in_list_table('2: Use peacock feathers to make a fly')
 		
