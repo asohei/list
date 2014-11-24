@@ -1,0 +1,49 @@
+# To be done
+
+	display multiple item in the tables
+	support more than one list
+	Adjust model so that items are associated with different lists
+	Add unique URLs for each list
+	Add a URL for creating a new list via POST
+	Add URLs for adding a new item to an existing list via POST
+
+# Finishied
+Get FTs to clean up after themselves
+
+
+
+
+
+
+
+
+
+# Future of list.t23.jp
+
+	What is the list?
+	
+		- life priority
+		- daily task
+		- schedule
+		- 
+		
+	The characteristic of the sites
+	
+		- very fast
+		- simple
+		- important for life
+
+	Identify the user from device. 
+	
+		1. new user comes to the site. he will find empty page which accepts list. No login is required.
+			- in the back, site identifies his machine ID.
+		
+		2. the user comes back again. and see what he has done.
+			- in the back, site identifies his machine ID and displays his list.
+			
+		3. if he wants to work from other devices (work PC, mobile, etc), he has to create login to start associate with his account with other device thru login.
+			- once login is created, his list will have unique identifier thru URL such as  list.com/sohei/
+		
+		4. if he wants to share part of his list, he has to set permission.
+
+
