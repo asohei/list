@@ -1,3 +1,31 @@
+For Daemon of list-staging.t23.jp, I did followigng.
+
+	reference: http://kuttler.eu/code/debian-init-script-virtualenv-gunicorn-django/
+
+	
+		file created at : /etc/init.d/list-staging, the author of the above URL should have base this script on skelton at /etc/init.d/skelton
+		
+			Initially, script had errors to be run, but, "space" was the reason for this.
+			
+				Permission error : 
+					 Line20 PROJECT= /home/sohei/sites/list-staging.t23.jp/source
+					 
+					 Changed to
+						PROJECT=/home/sohei/sites/list-staging.t23.jp/source
+						
+				Permission error:
+					Line67 ../v-python3.4/bin/activate
+						Changed to 
+							. ../v-python3.4/bin/activate
+
+			# chmod 755 /etc/init.d/list-staging				
+			# update-rc.d list-staging defaults
+				 to add the appropriate symbolic links to cause the script to be executed when the system goes down, or comes up.
+				 If you wish to remove the script from the startup sequence in the future run: # /etc/rc2.d# update-rc.d -f  list-stagting remove
+
+				 
+				 
+				 
 # To be done
 
 	display multiple item in the tables
