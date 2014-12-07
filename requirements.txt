@@ -1,1 +1,4 @@
 Django==1.7
+gunicorn==19.1.1
+selenium==2.43.0
+virtualenv==1.11.6
