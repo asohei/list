@@ -20,11 +20,11 @@ BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 SECRET_KEY = '8=e)8*_+^**6h@dm9tmqik_2x%ncwo1=9_*c3@dm13u*og(-am'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['list-staging.t23.jp']
 
 
 # Application definition
