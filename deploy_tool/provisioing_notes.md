@@ -1,18 +1,20 @@
-#Required packages:
+#Required http server setting
 
-	nginx
-	pyton3
-	git
-	pip
-	virtualenv
-	gunicorn
+	nginx 
+	setup sites-available and create ln -s to sites-enabled
 
-	ex:
-		sudo apt-get install nginx git python3 python3-pip
-			to install python 3.4 for debian, we need to install from source as of 2014.11
-				for sqllike, we need to install some dev packages together.
+#Tested python version
 
-		sudo pip3 install virtualenv
+	3.4.2
+
+	As of 2014.11, installking python3.4.2 on debian required source instllation together witl some dev packages manually.
+
+#Requred Python Package
+
+	Installed thru fabfile.py
+		or pip install -r requirements.txt 
+
+
 
 #Nginx virtual hosting config
 
