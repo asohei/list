@@ -3,7 +3,6 @@ from fabric.api import env, local, run
 import random
 
 REPO_URL = "https://github.com/asohei/list.git"
-REMOTE_NAME="list"
 
 def deploy():
 	site_folder = '/home/%s/sites/%s' % (env.user, env.host)
