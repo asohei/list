@@ -28,6 +28,7 @@ TEMPLATE_DEBUG = True
 
 #ALLOWED_HOSTS = ['list-staging.t23.jp']
 
+
 # Application definition
 
 INSTALLED_APPS = (
@@ -40,6 +41,9 @@ INSTALLED_APPS = (
     'lists',
     'accounts',
 )
+
+AUTH_USER_MODEL = 'accounts.User'
+AUTHENTICATION_BACKENDS = ('accounts.authentication.PersonaAuthenticationBackend',)
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -87,5 +91,4 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, '../static')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'superlists', 'static'),)
 
-AUTH_USER_MODEL = 'accounts.User'
-AUTHENTICATION_BACKENDS = ('accounts.authentication.PersonaAuthenticationBackend')
+
