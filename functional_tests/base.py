@@ -20,7 +20,7 @@ class FunctionalTest(StaticLiveServerTestCase):
         
     @classmethod
     def tearDownClass(cls):
-        if cls.server_url == cls.live_server_url:
+        if not cls.against_staging:
             super().tearDownClass()
 
     def setUp(self):
